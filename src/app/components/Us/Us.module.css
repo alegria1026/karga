@@ -1,0 +1,71 @@
+.wrapper {
+  padding: 3rem 3rem;
+  background-color: #fff;
+  color: #000; /* <-- Color de texto general */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  min-width: 320px;
+  
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000; /* <-- Color del título */
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000; /* <-- Color del subtítulo */
+  margin-bottom: 1rem;
+}
+
+.text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #000; /* <-- Color de los párrafos */
+  
+}
+
+.list {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #000; /* <-- Color de los ítems */
+}
+
+.image {
+  flex: 4;
+  min-width: 340px;
+  max-width: 400px;
+  position: relative;
+  aspect-ratio: 4 / 4;
+}
+
+.img {
+  object-fit: cover;
+  border-radius: 8px;
+  object-position: top right;
+}
