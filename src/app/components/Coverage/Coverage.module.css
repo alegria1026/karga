@@ -1,15 +1,14 @@
 .wrapper {
   position: relative;
-  background-image: url("./Karga.jpg"); /* Asegúrate de poner este fondo en /public */
+  background-image: url("./Karga.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 500px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 2rem;
-
 }
 
 .overlay {
@@ -20,28 +19,34 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
-  
 }
 
 .card {
+  position: relative;
   background: #fff;
   border-radius: 1rem;
-  padding: 2rem;
-  max-width: 300px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2.5rem;
+  max-width: 400px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  margin-left: 60px;
+  margin-top: 40px;
+  z-index: 1;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
   color: #000;
+  margin-bottom: 1.2rem;
 }
 
 .card p {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+  font-weight: bold;
 }
 
 .list {
@@ -51,28 +56,25 @@
 }
 
 .list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   padding-left: 1.2rem;
   position: relative;
-  color: #000;
+  color: #111;
+  font-size: 1.05rem;
 }
 
 .list li::before {
-  content: "📍";
+  content: "•";
   position: absolute;
   left: 0;
+  color: #444;
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
-.button {
-  background: #000;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.button:hover {
-  background: #333;
+.card strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #000;
 }

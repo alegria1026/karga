@@ -1,21 +1,26 @@
+import ButtonSecundary from "../ButtonSecondary"
 import styles from "./Coverage.module.css";
 
-export default function Coverage() {
+function Coverage () {
   return (
-    <section className={styles.wrapper} id="cobertura">
+    <section className={styles.wrapper}>
       <div className={styles.overlay}>
         <div className={styles.card}>
           <h2 className={styles.title}>Zonas de Cobertura</h2>
           <p>Nuestra área de servicio contempla:</p>
           <ul className={styles.list}>
-            <li>Estado de México</li>
-            <li>Ciudad de México</li>
-            <li>Monterrey</li>
-            <li>Guadalajara</li>
+            <li>Veracruz</li>
+            <li>Chiapas</li>
+            <li>Oaxaca</li>
+            <li>Tabasco</li>
+            <li>Campeche</li>
+            <li>Zona de la península</li>
           </ul>
-          <button className={styles.button}>Cotización remota</button>
+          <ButtonSecundary text="Contacto"></ButtonSecundary>
         </div>
       </div>
     </section>
   );
 }
+
+export default Coverage
