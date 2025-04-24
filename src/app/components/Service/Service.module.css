@@ -1,20 +1,20 @@
 .wrapper {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
+    padding-bottom: 0.5rem;
     background-color: #fff;
-    color: #000;
+    color: #2C2C2C;
     position: relative;
 }
 
 .title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #000;
+    color: #2C2C2C;
     margin-bottom: 3rem;
     text-align: center;
     text-transform: uppercase;
     position: relative;
 }
-
 
 
 .content {
@@ -48,16 +48,10 @@
     border: 1px solid #f0f0f0;
 }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    border-color: #e0e0e0;
-}
-
 .subtitle {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #000;
+    color: #2C2C2C;
     margin-bottom: 1.25rem;
     text-align: center;
 }
@@ -72,18 +66,18 @@
     width: 60px;
     height: 60px;
     object-fit: contain;
-}
+    color: #0097b2; 
+  }
 
 .cardText {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 0;
-    color: #333;
+    color: #2C2C2C;
     text-align: justify;
     flex-grow: 1;
 }
 
-/* Ajuste para pantallas más pequeñas */
 @media (max-width: 767px) {
     .card {
     max-width: 100%;

@@ -1,7 +1,5 @@
 import styles from './Service.module.css';
-import se from "./karga.png"
-import th from "./kargaa.png"
-import de from "./kargaaa.png"
+import { CpuChipIcon, Battery100Icon, WrenchScrewdriverIcon } from '@heroicons/react/24/solid'
 
 function Service() {
 
@@ -13,7 +11,7 @@ function Service() {
         <div className={styles.card}>
           <h3 className={styles.subtitle}>Diseño</h3>
           <div className={styles.iconContainer}>
-            <img src={de.src} alt="Icono de diseño" className={styles.icon} />
+            <CpuChipIcon className={styles.icon} width={60} height={60} />
           </div>
           <p className={styles.cardText}>
             Analizamos cada proyecto para ofrecer soluciones personalizadas, eficientes y seguras. 
@@ -25,7 +23,7 @@ function Service() {
         <div className={styles.card}>
           <h3 className={styles.subtitle}>Instalación</h3>
           <div className={styles.iconContainer}>
-            <img src={se.src} alt="Icono de instalación" className={styles.icon} />
+            <Battery100Icon className={styles.icon} width={60} height={60} />
           </div>
           <p className={styles.cardText}>
             Realizamos la instalación profesional de cargadores eléctricos con los más altos 
@@ -38,7 +36,7 @@ function Service() {
         <div className={styles.card}>
           <h3 className={styles.subtitle}>Mantenimiento</h3>
           <div className={styles.iconContainer}>
-            <img src={th.src} alt="Icono de mantenimiento" className={styles.icon} />
+            <WrenchScrewdriverIcon className={styles.icon} width={60} height={60} />
           </div>
           <p className={styles.cardText}>
             Ofrecemos mantenimiento preventivo y correctivo para garantizar el óptimo 

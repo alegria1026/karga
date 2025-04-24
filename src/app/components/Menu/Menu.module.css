@@ -4,6 +4,24 @@
   align-items: center;
   padding: 1.5rem 2rem;
   position: relative;
+  transition: background-color 0.2s;    /* transición suave de fondo */
+}
+
+/* fondo blanco al hacer hover sobre todo el contenedor */
+.navbar:hover {
+  background-color: white;
+}
+
+/* transición suave de color para todos los hijos */
+.navbar * {
+  transition: color 0.2s;
+}
+
+/* al hacer hover sobre .navbar, cambiar color de logo, links y botón */
+.navbar:hover .logo,
+.navbar:hover .navLink,
+.navbar:hover .menuButton {
+  color: black;
 }
 
 .logo {
@@ -22,11 +40,11 @@
   text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: color 0.2s;
+  transition: color 0.2s;  /* opcional: ya cubierto por .navbar * */
 }
 
 .navLink:hover {
-  color: #ccc;
+  color: #ccc; /* si quieres un hover independiente en el link */
 }
 
 .menuButton {

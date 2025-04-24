@@ -1,7 +1,7 @@
 .button {
     padding: 1rem 2.5rem;
     background-color: #fff;
-    color: #000;
+    color: #343434;
     border: none;
     font-size: 1rem;
     font-weight: 600;
@@ -11,7 +11,7 @@
   }
   
   .button:hover {
-    background-color: #000;
+    background-color: #343434;
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
