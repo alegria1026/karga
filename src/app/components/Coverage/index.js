@@ -6,7 +6,7 @@ function Coverage () {
     <section className={styles.wrapper}>
       <div className={styles.overlay}>
         <div className={styles.card}>
-          <h2 className={styles.title}>Zonas de Cobertura</h2>
+          <h2 className={styles.title}>Zonas de cobertura</h2>
           <p>Nuestra área de servicio contempla:</p>
           <ul className={styles.list}>
             <li>Veracruz</li>

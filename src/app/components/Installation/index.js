@@ -1,15 +1,13 @@
 import styles from './Installation.module.css'
-import document from './document.png';
-import list from "./list.png"
 
 function Installation() {
   const steps = [
     {
-      icon: document,
+      icon: "/icons/programacion.png",
       title: "SOLICITUD",
     },
     {
-      icon: list,
+      icon: "/icons/programacion.png",
       title: "LEVANTAMIENTO Y COTIZACIÓN",
     },
     {

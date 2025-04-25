@@ -3,6 +3,8 @@
 import { useState } from "react"
 import styles from "./Menu.module.css"
 import { IoMdMenu, IoMdClose } from "react-icons/io"
+import Image from "next/image"
+import logo from "./logo.png"
 
 function Menu() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -12,8 +14,10 @@ function Menu() {
   }
 
   return (
-    <nav className={styles.navbar}>
-      <h1 className={styles.logo}>KARGA</h1>
+    <nav className={`${styles.navbar} ${menuOpen ? styles.menuOpen : ''}`}>
+      <div className={styles.logo}>
+        <Image src={logo.src} alt="Karga Logo" fill />
+      </div>
       <button className={styles.menuButton} onClick={toggleMenu}>
         {menuOpen ? <IoMdClose /> : <IoMdMenu />}
       </button>

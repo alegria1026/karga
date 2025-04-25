@@ -1,12 +1,19 @@
+.processWrapper {
+    background-color: #F0F0F0;
+    padding: 2rem;
+}
+
 .container {
     max-width: 600px;
-    margin: 2rem auto;
+    margin: auto;
     padding: 40px;
     font-family: Arial, sans-serif;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid #f0f0f0;
+    border: 1px solid #ffff;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffff;
+    border-radius: 12px;
 }
 
 .heading {

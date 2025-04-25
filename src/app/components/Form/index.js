@@ -40,79 +40,81 @@ function Form() {
   }
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.heading}>CONTACTO</h1>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <div className={styles.formGroup}>
-          <label htmlFor="nombre" className={styles.label}>
-            Nombre completo <span className={styles.required}>*</span>
-          </label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            value={formData.nombre}
-            onChange={handleChange}
-            required
-            className={styles.input}
-          />
-        </div>
-        
-        <div className={styles.formGroup}>
-          <label htmlFor="telefono" className={styles.label}>
-            Teléfono <span className={styles.required}>*</span>
-          </label>
-          <input
-            type="tel"
-            id="telefono"
-            name="telefono"
-            value={formData.telefono}
-            onChange={handleChange}
-            required
-            className={styles.input}
-          />
-        </div>
-        
-        <div className={styles.formGroup}>
-          <label htmlFor="correo" className={styles.label}>
-            Correo <span className={styles.required}>*</span>
-          </label>
-          <input
-            type="email"
-            id="correo"
-            name="correo"
-            value={formData.correo}
-            onChange={handleChange}
-            required
-            className={styles.input}
-          />
-        </div>
-        
-        <div className={styles.formGroup}>
-          <label htmlFor="asunto" className={styles.label}>
-            Asunto <span className={styles.required}>*</span>
-          </label>
-          <select
-            id="asunto"
-            name="asunto"
-            value={formData.asunto}
-            onChange={handleChange}
-            required
-            className={styles.select}
-          >
-            <option value="">Seleccione un asunto</option>
-            <option value="cotizacion_instalacion">Quiero una cotización para instalar</option>
-            <option value="agendar_mantenimiento">Quiero agendar mantenimiento a mi estación de carga</option>
-            <option value="info_flotillas">Quiero información sobre los servicios a flotillas comerciales</option>
-            <option value="info_industrial">Quiero información sobre los servicios industriales y cargadores de potencia elevada</option>
-            <option value="cotizar_electrolineras">Me interesa cotizar un proyecto de electrolineras</option>
-            <option value="info_paneles_solares">Quiero información sobre los sistemas complementados con paneles solares</option>
-          </select>
-        </div>
-        
-        <ButtonSecundary text="Solicitar"/>
-      </form>
-    </div>
+    <section className={styles.processWrapper}>
+      <div className={styles.container}>
+        <h1 className={styles.heading}>CONTACTO</h1>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <div className={styles.formGroup}>
+            <label htmlFor="nombre" className={styles.label}>
+              Nombre completo <span className={styles.required}>*</span>
+            </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              value={formData.nombre}
+              onChange={handleChange}
+              required
+              className={styles.input}
+            />
+          </div>
+          
+          <div className={styles.formGroup}>
+            <label htmlFor="telefono" className={styles.label}>
+              Teléfono <span className={styles.required}>*</span>
+            </label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              value={formData.telefono}
+              onChange={handleChange}
+              required
+              className={styles.input}
+            />
+          </div>
+          
+          <div className={styles.formGroup}>
+            <label htmlFor="correo" className={styles.label}>
+              Correo <span className={styles.required}>*</span>
+            </label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              value={formData.correo}
+              onChange={handleChange}
+              required
+              className={styles.input}
+            />
+          </div>
+          
+          <div className={styles.formGroup}>
+            <label htmlFor="asunto" className={styles.label}>
+              Asunto <span className={styles.required}>*</span>
+            </label>
+            <select
+              id="asunto"
+              name="asunto"
+              value={formData.asunto}
+              onChange={handleChange}
+              required
+              className={styles.select}
+            >
+              <option value="">Seleccione un asunto</option>
+              <option value="cotizacion_instalacion">Quiero una cotización para instalar</option>
+              <option value="agendar_mantenimiento">Quiero agendar mantenimiento a mi estación de carga</option>
+              <option value="info_flotillas">Quiero información sobre los servicios a flotillas comerciales</option>
+              <option value="info_industrial">Quiero información sobre los servicios industriales y cargadores de potencia elevada</option>
+              <option value="cotizar_electrolineras">Me interesa cotizar un proyecto de electrolineras</option>
+              <option value="info_paneles_solares">Quiero información sobre los sistemas complementados con paneles solares</option>
+            </select>
+          </div>
+          
+          <ButtonSecundary text="Solicitar"/>
+        </form>
+      </div>
+    </section>
   )
 }
 

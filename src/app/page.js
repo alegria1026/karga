@@ -5,6 +5,9 @@ import Coverage from './components/Coverage';
 import Service from './components/Service';
 import Installation from './components/Installation';
 import Form from './components/Form';
+import Brand from './components/Brand';
+import Footer from './components/Footer';
+import Menu from './components/Menu';
 
 export default function Home() {
   return (
@@ -14,7 +17,9 @@ export default function Home() {
       <Coverage />
       <Service />
       <Installation />
+      <Brand />
       <Form />
+      <Footer />
     </main>
   );
 }

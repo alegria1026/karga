@@ -2,34 +2,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   position: relative;
-  transition: background-color 0.2s;    /* transición suave de fondo */
+  z-index: 10;
+  background-color: transparent;
 }
 
-/* fondo blanco al hacer hover sobre todo el contenedor */
-.navbar:hover {
-  background-color: white;
-}
 
-/* transición suave de color para todos los hijos */
 .navbar * {
   transition: color 0.2s;
 }
 
-/* al hacer hover sobre .navbar, cambiar color de logo, links y botón */
 .navbar:hover .logo,
 .navbar:hover .navLink,
 .navbar:hover .menuButton {
   color: black;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 0;
-  color: white;
+.navbar:hover {
+  background-color: white;
 }
+
+/* Logo container con imagen */
+.logo {
+  position: relative;
+  width: 90px;    /* Ajusta según tamaño de tu logo */
+  height: 40px;
+}
+
 
 .navLinks {
   display: flex;
@@ -40,11 +40,11 @@
   text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: color 0.2s;  /* opcional: ya cubierto por .navbar * */
+  transition: color 0.2s;
 }
 
 .navLink:hover {
-  color: #ccc; /* si quieres un hover independiente en el link */
+  color: #ccc;
 }
 
 .menuButton {
@@ -56,6 +56,7 @@
   cursor: pointer;
 }
 
+/* ------------------ RESPONSIVE ------------------ */
 @media (max-width: 768px) {
   .navLinks {
     position: absolute;
@@ -66,13 +67,29 @@
     gap: 1rem;
     padding: 1rem;
     display: none;
+    text-align: right;
   }
 
   .navLinks.open {
     display: flex;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navLinks.open .navLink {
+    color: black;
   }
 
   .menuButton {
     display: block;
   }
+}
+
+/* ------------------ MENU ABIERTO ------------------ */
+.menuOpen {
+  background-color: white;
+}
+
+.menuOpen .menuButton {
+  color: black;
 }

@@ -9,6 +9,20 @@
     justify-content: space-between;
 }
 
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menuWrapper {
+    z-index: 10;
+}
+
 .heroOverlay {
     position: absolute;
     top: 0;
@@ -43,5 +57,55 @@
     font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 2rem;
-    color: #ffff;
+    color: #fff;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .heroText {
+        font-size: 1.3rem;
+    }
+
+    .heroTextContainer {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .heroText {
+        font-size: 1.1rem;
+    }
+
+    .heroTextContainer {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .heroText {
+        font-size: 1rem;
+    }
+
+    .heroTextContainer {
+        padding: 0.75rem;
+    }
+
+    .heroSection {
+        height: auto;
+        padding-bottom: 3rem;
+    }
 }
