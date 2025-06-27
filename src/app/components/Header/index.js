@@ -15,7 +15,7 @@ function Header() {
                     <p className={styles.heroText}>
                         La solución confiable en el Sureste de México para la instalación y mantenimiento de cargadores para vehículos eléctricos.
                     </p>
-                    <Button text="Contacto" />
+                    <a href="#form"><Button text="Contacto"/></a>
                 </div>
             </div>
         </div>
