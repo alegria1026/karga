@@ -86,7 +86,7 @@ function Form() {
   }
 
   return (
-    <section className={styles.processWrapper}>
+    <section id="form" className={styles.processWrapper}>
       <div className={styles.container}>
         <h1 className={styles.heading}>CONTACTO</h1>
         

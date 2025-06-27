@@ -4,7 +4,7 @@ import { CpuChipIcon, Battery100Icon, WrenchScrewdriverIcon } from '@heroicons/r
 function Service() {
 
   return (
-    <section className={styles.wrapper}>
+    <section id="service" className={styles.wrapper}>
       <h2 className={styles.title}>SERVICIOS</h2>
       
       <div className={styles.content}>

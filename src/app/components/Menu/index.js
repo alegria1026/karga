@@ -22,10 +22,10 @@ function Menu() {
         {menuOpen ? <IoMdClose /> : <IoMdMenu />}
       </button>
       <div className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
-        <a href="#" className={styles.navLink}>Home</a>
+        <a href="#" className={styles.navLink}>Inicio</a>
         <a href="#us" className={styles.navLink}>Nosotros</a>
-        <a href="#" className={styles.navLink}>Servicio</a>
-        <a href="#" className={styles.navLink}>Contacto</a>
+        <a href="#service" className={styles.navLink}>Servicio</a>
+        <a href="#form" className={styles.navLink}>Contacto</a>
       </div>
     </nav>
   )

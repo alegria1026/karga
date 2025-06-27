@@ -32,7 +32,7 @@ export async function POST(request) {
     // Configurar el correo
     const mailOptions = {
       from: '"Formulario de Contacto" <yahiralegria25@gmail.com>',
-      to: 'yahirhumberto04@gmail.com',
+      to: 'rmg07@outlook.com',
       subject: `Nuevo mensaje de contacto: ${asuntoTexto}`,
       html: `
         <h2>Nuevo mensaje de contacto</h2>
