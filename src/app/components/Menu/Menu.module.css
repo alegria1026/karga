@@ -9,9 +9,12 @@
   transition: all 0.3s ease;
 }
 
-
 .navbar * {
   transition: color 0.2s;
+}
+
+.navbar:hover {
+  background-color: white;
 }
 
 .navbar:hover .logo,
@@ -20,17 +23,11 @@
   color: black;
 }
 
-.navbar:hover {
-  background-color: white;
-}
-
-/* Logo container con imagen */
 .logo {
   position: relative;
-  width: 90px;    /* Ajusta según tamaño de tu logo */
+  width: 90px;
   height: 40px;
 }
-
 
 .navLinks {
   display: flex;
@@ -45,7 +42,7 @@
 }
 
 .navLink:hover {
-  color: #ccc;
+  color: #0097b2 !important;
 }
 
 .menuButton {

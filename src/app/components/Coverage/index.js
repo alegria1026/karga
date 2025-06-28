@@ -16,7 +16,7 @@ function Coverage () {
             <li>Campeche</li>
             <li>Zona de la península</li>
           </ul>
-          <ButtonSecundary text="Contacto"></ButtonSecundary>
+          <a href="#form"><ButtonSecundary text="Contacto"></ButtonSecundary></a>
         </div>
       </div>
     </section>
