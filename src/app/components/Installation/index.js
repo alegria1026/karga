@@ -1,45 +1,59 @@
-import styles from './Installation.module.css'
+'use client';
+
+import {
+  HiOutlineDocumentText,
+  HiOutlineClipboardList,
+  HiOutlineCalendar,
+} from 'react-icons/hi';
+
+import {
+  HiOutlineWrenchScrewdriver,
+  HiOutlineBuildingOffice,
+  HiOutlinePresentationChartBar
+} from 'react-icons/hi2';
+
+import styles from './Installation.module.css';
 
 function Installation() {
   const steps = [
     {
-      icon: "/icons/programacion.png",
-      title: "SOLICITUD",
+      icon: <HiOutlineDocumentText size={64} />,
+      title: 'SOLICITUD',
     },
     {
-      icon: "/icons/programacion.png",
-      title: "LEVANTAMIENTO Y COTIZACIÓN",
+      icon: <HiOutlineClipboardList size={64} />,
+      title: 'LEVANTAMIENTO Y COTIZACIÓN',
     },
     {
-      icon: "/icons/programacion.png",
-      title: "AGENDA",
+      icon: <HiOutlineCalendar size={64} />,
+      title: 'AGENDA',
     },
     {
-      icon: "/icons/instalacion.png",
-      title: "INSTALACIÓN Y CONEXIÓN",
+      icon: <HiOutlineWrenchScrewdriver size={64} />,
+      title: 'INSTALACIÓN Y CONEXIÓN',
     },
     {
-      icon: "/icons/puesta.png",
-      title: "TRÁMITE ANTE CFE",
+      icon: <HiOutlineBuildingOffice size={64} />,
+      title: 'TRÁMITE ANTE CFE',
     },
     {
-      icon: "/icons/mantenimiento.png",
-      title: "PUESTA EN MARCHA Y CAPACITACIÓN",
-    }
+      icon: <HiOutlinePresentationChartBar size={64} />,
+      title: 'PUESTA EN MARCHA Y CAPACITACIÓN',
+    },
   ];
 
   return (
     <section className={styles.processWrapper}>
       <div className={styles.processHeader}>
-        <br/>
+        <br />
         <h2 className={styles.mainTitle}>Conoce nuestro proceso de instalación</h2>
       </div>
-      
+
       <div className={styles.stepsContainer}>
         {steps.map((step, index) => (
           <div key={index} className={styles.stepItem}>
             <div className={styles.iconWrapper}>
-              <img src={step.icon.src} alt={step.title} className={styles.stepIcon} />
+              {step.icon}
             </div>
             <h3 className={styles.stepTitle}>{step.title}</h3>
           </div>
